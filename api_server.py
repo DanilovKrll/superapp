@@ -3,21 +3,21 @@ app = Flask(__name__)
 
 #GET REQUEST
 
-@app.route('/readHello')
+@app.route('/read')
 def getRequestHello():
 	return "Hi, I got your GET Request!"
 
 #POST REQUEST
-@app.route('/createHello', methods = ['POST'])
+@app.route('/create', methods = ['POST'])
 def postRequestHello():
 	return "I see you sent a POST message :-)"
 #UPDATE REQUEST
-@app.route('/updateHello', methods = ['PUT'])
+@app.route('/update', methods = ['PUT'])
 def updateRequestHello():
 	return "Sending Hello on an PUT request!"
 
 #DELETE REQUEST
-@app.route('/deleteHello', methods = ['DELETE'])
+@app.route('/delete', methods = ['DELETE'])
 def deleteRequestHello():
 	return "Deleting your hard drive.....haha just kidding! I received a DELETE request!"
 
